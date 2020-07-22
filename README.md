@@ -1,27 +1,29 @@
 *Project Name: asdf*
 
-=================
 **Author: asdf**
 
 **Table of Contents**
+<!--ts-->
 1. Project Description (#project-description)
-2. Installation Instructions
+2. Installation Instructions (#installation-instructions)
 3. Usage Information (#usage-information)
 4. Contribution Guidelines
 5. Test Instructions
 6. License Type
 7. Questions | Email me
-**Project Description: asdf**
 
-**Installation Instructions: asdf**
+<!--te-->
+**Project Description adsf**
 
-**Usage Information: asdf**
+**Installation Instructions adf**
 
-**Contribution Guidelines: adf**
+**Usage Information asdf**
 
-**Test Instructions: asdf**
+**Contribution Guidelines adf**
 
-**License Type: MIT**
+**Test Instructions asdf**
 
-**Questions? Email me @: adsf**
+**License Type MIT**
+
+**Questions? Email me @ adsf**
 
