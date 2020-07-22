@@ -1,9 +1,9 @@
-# Project Name: asdf
+# Project Name: adsf
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Author: asdf
+## Author: adsf
 
 ## Table of Contents
 <!--ts-->
@@ -29,7 +29,7 @@ asdf
 <a name="use"></a>
 ## 3. Usage Information
 
- asdf
+ adsf
 
 <a name="guide"></a>
 ## 4. Contribution Guidelines
@@ -44,7 +44,7 @@ asdf
 <a name="l-type"></a>
 ## 6. License Type
 
- MIT
+ Licensed under the [MIT](license/mit.txt)
 
 <a name="email"></a>
 ## 7. Questions? Email me @

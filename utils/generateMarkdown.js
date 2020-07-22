@@ -13,13 +13,13 @@ const badges = {
     'txt': 'license/GPLv2.txt'
 }}
 
-function getBadgeURL(input) {
+function getLicenseInfo(input, option) {
     for (const license in badges) {
         console.log('license ' + license)
         console.log('input ' + input)
         if (license === input) {
             console.log(badges[license]);
-            return badges[license]['badge']
+            return badges[license][option]
         }
     }
 }
@@ -27,7 +27,7 @@ function generateMarkdown(data) {
     console.log(data)
     let readmeObj = 
 `# Project Name: ${data.project_title}\n\n
-${getBadgeURL(data.license)}\n
+${getLicenseInfo(data.license, 'badge')}\n
 ## Author: ${data.user_name}\n
 ## Table of Contents
 <!--ts-->
@@ -57,7 +57,7 @@ ${data.description}
  ${data.test_inst}\n
 <a name="l-type"></a>
 ## 6. License Type\n
- ${data.license}\n
+ Licensed under the [${data.license}](${getLicenseInfo(data.license, 'txt')})\n
 <a name="email"></a>
 ## 7. Questions? Email me @\n
 [${data.email}](mailto:${data.email})
