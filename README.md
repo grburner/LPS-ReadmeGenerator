@@ -5,6 +5,11 @@
 
 ## Author: grburner
 
+
+<p align="center">
+  <img alt="README Generator in Action" src="screenshot.png">
+</p>
+
 ## Table of Contents
 <!--ts-->
 1. [ Project Description ](#desc)
@@ -29,7 +34,7 @@ The README generator is a simple command line application built on Node. The pur
 <a name="use"></a>
 ## 3. Usage Information
 
- Replace the screenshot.png file with your project's screenshot. (Be sure not to change the name of the file). The command line will display a series of prompts to include information about the project. After the prompts complete a new README.md file will be generated in the root of the repository. Copy and paste this markdown formatted README into you project's README.md file
+ Replace the screenshot.png file with your project's screenshot. (Be sure not to change the name of the file). The command line will display a series of prompts to include information about the project. After the prompts complete a new README.md file will be generated in the root of the repository. Copy and paste this markdown formatted README into you project's README.md file.
 
 <a name="guide"></a>
 ## 4. Contribution Guidelines
