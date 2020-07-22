@@ -15,10 +15,10 @@ function getBadgeURL(input) {
 function generateMarkdown(data) {
     console.log(data)
     let readmeObj = 
-`**Project Name: ${data.project_title}**\n
+`# Project Name: ${data.project_title}\n
 ${getBadgeURL(data.license)}\n
-**Author: ${data.user_name}**\n
-**Table of Contents**
+## Author: ${data.user_name}\n
+## Table of Contents
 <!--ts-->
 1. [ Project Description ](#desc)
 2. [ Installation Instructions ](#inst)
@@ -32,17 +32,17 @@ ${getBadgeURL(data.license)}\n
 <a name="desc"></a>
 ## 1. Project Description\n
 <a name="inst"></a>
-**Installation Instructions** ${data.install_ins}\n
+## 2. Installation Instructions ${data.install_ins}\n
 <a name="use"></a>
-**Usage Information** ${data.usage_info}\n
+## 3. Usage Information ${data.usage_info}\n
 <a name="guide"></a>
-**Contribution Guidelines** ${data.cont_guide}\n
+## 4. Contribution Guidelines ${data.cont_guide}\n
 <a name="test"></a>
-**Test Instructions** ${data.test_inst}\n
+## 5. Test Instructions ${data.test_inst}\n
 <a name="l-type"></a>
-**License Type** ${data.license}\n
+## 6. License Type ${data.license}\n
 <a name="email"></a>
-**Questions? Email me @** ${data.email}\n
+## 7. Questions? Email me @ ${data.email}\n
 `
     return readmeObj;
 };
