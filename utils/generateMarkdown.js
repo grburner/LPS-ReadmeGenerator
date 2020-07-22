@@ -59,8 +59,8 @@ ${data.description}
 ## 6. License Type\n
  Licensed under the [${data.license}](${getLicenseInfo(data.license, 'txt')}) license.\n
 <a name="email"></a>
-## 7. Questions? Email me @\n
-[${data.email}](mailto:${data.email}) or find me on [GitHub @](https://github.com/${data.user_name})
+## 7. Questions? Email me @:\n
+[${data.email}](mailto:${data.email}) or find me on [GitHub](https://github.com/${data.user_name})
 `
     return readmeObj;
 };
