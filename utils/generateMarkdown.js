@@ -1,8 +1,22 @@
 // function to generate markdown for README
+const badges = {
+'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)', 
+'Apache': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)', 
+'GPLv2': '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+}
+
+function getBadgeURL(input) {
+    for (const badge in badges) {
+        if (badge === input) {
+            return badges[badge]
+        }
+    }
+}
 function generateMarkdown(data) {
     console.log(data)
     let readmeObj = 
-`*Project Name: ${data.project_title}*\n
+`**Project Name: ${data.project_title}**\n
+${getBadgeURL(data.license)}
 **Author: ${data.user_name}**\n
 **Table of Contents**
 <!--ts-->
@@ -14,7 +28,7 @@ function generateMarkdown(data) {
 6. License Type
 7. Questions | Email me\n
 <!--te-->
-**Project Description** <a name="project-description"></a> ${data.description}\n
+**Project Description** ${data.description}\n
 **Installation Instructions** ${data.install_ins}\n
 **Usage Information** ${data.usage_info}\n
 **Contribution Guidelines** ${data.cont_guide}\n
