@@ -14,13 +14,13 @@ function generateMarkdown(data) {
 6. License Type
 7. Questions | Email me\n
 <!--te-->
-**Project Description ${data.description}**\n
-**Installation Instructions ${data.install_ins}**\n
-**Usage Information ${data.usage_info}**\n
-**Contribution Guidelines ${data.cont_guide}**\n
-**Test Instructions ${data.test_inst}**\n
-**License Type ${data.license}**\n
-**Questions? Email me @ ${data.email}**\n
+**Project Description** <a name="project-description"></a> ${data.description}\n
+**Installation Instructions** ${data.install_ins}\n
+**Usage Information** ${data.usage_info}\n
+**Contribution Guidelines** ${data.cont_guide}\n
+**Test Instructions** ${data.test_inst}\n
+**License Type** ${data.license}\n
+**Questions? Email me @** ${data.email}\n
 `
     return readmeObj;
 };
