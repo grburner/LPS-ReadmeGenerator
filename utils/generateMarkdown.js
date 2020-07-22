@@ -20,13 +20,13 @@ ${getBadgeURL(data.license)}\n
 **Author: ${data.user_name}**\n
 **Table of Contents**
 <!--ts-->
-1. [ Project Description. ](#desc)
-2. Installation Instructions (#inst)
-3. Usage Information (#use)
-4. Contribution Guidelines (#guide)
-5. Test Instructions (#test)
-6. License Type (#l-type)
-7. Questions | Email me (#email)
+1. [ Project Description ](#desc)
+2. [ Installation Instructions ](#inst)
+3. [ Usage Information ](#use)
+4. [ Contribution Guidelines ](#guide)
+5. [ Test Instructions ](#test)
+6. [ License Type ](#l-type)
+7. [ Questions | Email me ](#email)
 \n
 <!--te-->
 <a name="desc"></a>
