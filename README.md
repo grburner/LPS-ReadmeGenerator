@@ -34,7 +34,7 @@ The README generator is a simple command line application built on Node. The pur
 <a name="guide"></a>
 ## 4. Contribution Guidelines
 
- Submit bugs and feature requests. Review source code changes. Help review the documentation. Make pull requests for anything from typos to updated functionality
+ There are many ways to help grow this project: Submit bugs and feature requests. Review source code changes. Help review the documentation. Make pull requests for anything from typos to updated functionality.
 
 <a name="test"></a>
 ## 5. Test Instructions
