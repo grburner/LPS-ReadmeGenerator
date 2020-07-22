@@ -66,8 +66,7 @@ let questions = [
 inquirer.prompt(questions).then(answers => {
     return markdownFunc(answers)
 }).then(data => {
-    console.log(`file-------------------${data}`)
-    fs.appendFile('README.md', data, 'utf-8', (err) => {
+    fs.writeFile('README.md', data, (err) => {
         if (err) throw err;
     })
 }).then(data => {
