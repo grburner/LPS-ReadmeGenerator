@@ -1,25 +1,34 @@
 // function to generate markdown for README
 const badges = {
-'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)', 
-'Apache': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)', 
-'GPLv2': '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
-}
+'MIT': {
+    'badge': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+    'txt': 'license/mit.txt'
+},
+'Apache': {
+    'badge': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+    'txt': 'license/apache.txt'
+},
+'GPLv2': {
+    'badge': '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)',
+    'txt': 'license/GPLv2.txt'
+}}
 
 function getBadgeURL(input) {
-    for (const badge in badges) {
-        if (badge === input) {
-            return badges[badge]
+    for (const license in badges) {
+        console.log('license ' + license)
+        console.log('input ' + input)
+        if (license === input) {
+            console.log(badges[license]);
+            return badges[license]['badge']
         }
     }
 }
 function generateMarkdown(data) {
     console.log(data)
     let readmeObj = 
-`# Project Name:\n
- ${data.project_title}\n
+`# Project Name: ${data.project_title}\n\n
 ${getBadgeURL(data.license)}\n
-## Author:\n
- ${data.user_name}\n
+## Author: ${data.user_name}\n
 ## Table of Contents
 <!--ts-->
 1. [ Project Description ](#desc)
@@ -51,7 +60,7 @@ ${data.description}
  ${data.license}\n
 <a name="email"></a>
 ## 7. Questions? Email me @\n
- ${data.email}\n
+[${data.email}](mailto:${data.email})
 `
     return readmeObj;
 };
