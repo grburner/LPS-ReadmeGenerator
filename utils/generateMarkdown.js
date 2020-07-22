@@ -16,11 +16,11 @@ function generateMarkdown(data) {
     console.log(data)
     let readmeObj = 
 `**Project Name: ${data.project_title}**\n
-${getBadgeURL(data.license)}
+${getBadgeURL(data.license)}\n
 **Author: ${data.user_name}**\n
 **Table of Contents**
 <!--ts-->
-1. Project Description (#project-description)
+1. [ Description. ](#desc)
 2. Installation Instructions (#installation-instructions)
 3. Usage Information (#usage-information)
 4. Contribution Guidelines
@@ -28,7 +28,8 @@ ${getBadgeURL(data.license)}
 6. License Type
 7. Questions | Email me\n
 <!--te-->
-**Project Description** ${data.description}\n
+<a name="desc"></a>
+## 1. Description
 **Installation Instructions** ${data.install_ins}\n
 **Usage Information** ${data.usage_info}\n
 **Contribution Guidelines** ${data.cont_guide}\n
