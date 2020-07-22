@@ -1,4 +1,4 @@
-# Project Name: README Generator
+# Project Name: g
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -20,11 +20,11 @@
 <a name="desc"></a>
 ## 1. Project Description
 
-The README generator is a simple command line application built on Node. The purpose is to eliminate dev time needed to get basic markdown formatting for a well structured README.\n This README was generated with this README generator!
+* Replace the screenshot.png file with your project's screenshot. (Be sure not to change the name of the file)* The command line will display a series of prompts to include information about the project. * After the prompts complete a new README.md file will be generated in the root of the repository. * Copy and paste this markdown formatted README into you project's README.md file
 <a name="inst"></a>
 ## 2. Installation Instructions
 
- - Download this source code./n- Run the app with: 'node index.js'
+ 
 
 <a name="use"></a>
 ## 3. Usage Information
