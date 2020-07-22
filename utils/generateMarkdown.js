@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
     console.log(data)
     let readmeObj = 
-`#Project Name: ${data.project_title}\n
+`**Project Name:** ${data.project_title}\n
 ##Author: ${data.user_name}\n
 ##Table of Contents
 1. Project Description (#project-description)
